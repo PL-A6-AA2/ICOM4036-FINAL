@@ -1,23 +1,21 @@
 import socket
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 def create_socket():
-    print('Creating socket')
+    print('Client created')
     return socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 
-def connect():
-    host = input('Type hostname: ')
-    port = int(input('Type port: '))
-    s.connect((host, port))
+def connect(s):
+    host_ip = input('Type host ip address(if localhost, type 127.0.0.1): ')
+    port = int(input('Type port(Must be the same port opened by the server): '))
+    s.connect((host_ip, port))
     print('Established connection')
 
 
-def receive():
-    s.recv(4096)
+def receive(s):
+    print(s.recv(4096))
 
 
-def close():
+def close(s):
     s.close()
     print('Disconnected')

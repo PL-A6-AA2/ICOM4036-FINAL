@@ -7,14 +7,16 @@ import socket
 tokens = the_lexer.tokens
 
 ids = {}
-p = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+address = ('', 0)
 
 # Parsing Rules
 def p_statement(p):
     """
-    statement : create_client_socket
-            | create_server_socket
+    statement : create_client
+            | create_server
             | connect
             | receive
             | send
@@ -25,7 +27,6 @@ def p_statement(p):
             | server_close
             | error
     """
-    # | request <--- esto va arriba como los demas
 
 
 def p_error(p):
@@ -35,81 +36,76 @@ def p_error(p):
         print("Syntax error at EOF")
 
 
-def p_create_client_socket():
-    'create_client_socket : CREATE_CLIENT_SOCKET'
+def p_create_client(p):
+    'create_client : CREATE_CLIENT'
     new_lang_client.create_socket()
 
 
-def p_create_server_socket():
-    'create_server_socket : CREATE_SERVER_SOCKET'
+def p_create_server(p):
+    'create_server : CREATE_SERVER'
     new_lang_server.create_socket()
 
 
-def p_connect():
+def p_connect(p):
     'connect : CONNECT'
-    new_lang_client.connect()
+    new_lang_client.connect(client_socket)
 
 
-def p_receive():
+def p_receive(p):
     'receive : RECEIVE'
-    new_lang.receive()
+    new_lang_client.receive(client_socket)
 
 
-def p_send():
+def p_send(p):
     'send : SEND'
-    new_lang_server.send()
+    new_lang_server.send(conn)
 
 
-def p_client_close():
+def p_client_close(p):
     'client_close : CLIENT_CLOSE'
-    new_lang_client.close()
+    new_lang_client.close(client_socket)
 
 
-def p_bind():
+def p_bind(p):
     'bind : BIND'
-    new_lang_server.bind()
+    new_lang_server.bind(server_socket)
 
 
-def p_listen():
+def p_listen(p):
     'listen : LISTEN'
-    new_lang_server.listen()
+    new_lang_server.listen(server_socket)
 
 
-def p_accept():
+def p_accept(p):
     'accept : ACCEPT'
-    new_lang_server.accept()
+    return new_lang_server.accept(server_socket)
 
 
-def p_server_close():
+def p_server_close(p):
     'server_close : SERVER_CLOSE'
-    new_lang_server.close()
-
-
-# def p_request(p):
-#      'request : REQUEST'
-#     new_lang_request()
+    new_lang_server.close(server_socket)
 
 
 yacc.yacc()
 while True:
     s = input('AA2 > ')
-    if s == 'create_client_socket':
-        p_create_client_socket()
-    elif s == 'create_server_socket':
-        p_create_server_socket()
+    if s == 'create_client':
+        p_create_client(client_socket)
+    elif s == 'create_server':
+        p_create_server(server_socket)
+    elif s == 'bind':
+        p_bind(server_socket)
+    elif s == 'listen':
+        p_listen(server_socket)
     elif s == 'connect':
-        p_connect()
-    elif s == 'receive': #
-        p_receive()
-    elif s == 'send': #
-        p_send()
+        p_connect(client_socket)
+    elif s == 'accept':
+        conn, address = p_accept(server_socket)
+    elif s == 'send':
+        p_send(conn)
+    elif s == 'receive':
+        p_receive(client_socket)
     elif s == 'client_close':
-        p_client_close()
-    elif s == 'bind': #
-        p_bind()
-    elif s == 'listen': #
-        p_listen()
-    elif s == 'accept': #
-        p_accept()
+        p_client_close(client_socket)
     elif s == 'server_close':
-        p_server_close()
+        p_server_close(server_socket)

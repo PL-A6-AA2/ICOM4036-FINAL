@@ -1,8 +1,8 @@
 import ply.lex as lex
 
 # Reserved Words
-reserved = {'create_client_socket': 'CREATE_CLIENT_SOCKET',
-    'create_server_socket': 'CREATE_SERVER_SOCKET',
+reserved = {'create_client': 'CREATE_CLIENT',
+    'create_server': 'CREATE_SERVER',
     'connect': 'CONNECT',
     'receive': 'RECEIVE',
     'send': 'SEND',
@@ -11,7 +11,7 @@ reserved = {'create_client_socket': 'CREATE_CLIENT_SOCKET',
     'listen': 'LISTEN',
     'accept': 'ACCEPT',
     'server_close': 'SERVER_CLOSE',
-    #'request: REQUEST'
+
 }
 
 # Tokens

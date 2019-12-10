@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85e7de53-86be-4f30-abd2-97c5f5a69a3f" name="Default Changelist" comment="" />
+    <list default="true" id="85e7de53-86be-4f30-abd2-97c5f5a69a3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_lang_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_lang_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_lexer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_parser.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,7 @@
   <component name="ProjectId" id="1UmFaQEpXApRJf5lEglnwZ8TXkx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -35,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.the_parser">
     <configuration name="the_lexer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NewLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,8 +64,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="the_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NewLang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/the_parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.the_lexer" />
+      <item itemvalue="Python.the_parser" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.the_parser" />
         <item itemvalue="Python.the_lexer" />
       </list>
     </recent_temporary>
@@ -88,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575961702789</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ignore">
+      <created>1576003926583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576003926583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented the server with all methods and began client." />
     <MESSAGE value="Implemented remaining client functions. Also improved server methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented remaining client functions. Also improved server methods." />
+    <MESSAGE value="ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore" />
   </component>
 </project>
