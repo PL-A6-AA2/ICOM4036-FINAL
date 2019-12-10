@@ -21,7 +21,7 @@ def listen(s):
 def accept(s):
     print('Got connection.')
     conn, address = s.accept()
-    return conn, addr
+    return conn, address
 
 
 def send(connection):

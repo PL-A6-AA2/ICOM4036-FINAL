@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="85e7de53-86be-4f30-abd2-97c5f5a69a3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_lang_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_lang_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_lexer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576003926583</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bug fixes.">
+      <created>1576012096263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576012096263</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +151,7 @@
     <MESSAGE value="Implemented the server with all methods and began client." />
     <MESSAGE value="Implemented remaining client functions. Also improved server methods." />
     <MESSAGE value="ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore" />
+    <MESSAGE value="Bug fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes." />
   </component>
 </project>
