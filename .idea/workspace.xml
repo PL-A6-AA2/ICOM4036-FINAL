@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85e7de53-86be-4f30-abd2-97c5f5a69a3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/new_lang_server.py" afterDir="false" />
+    <list default="true" id="85e7de53-86be-4f30-abd2-97c5f5a69a3f" name="Default Changelist" comment="Implemented the server with all methods and began client.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_lang.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_lexer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_lang_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_lang_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +78,14 @@
       <option name="presentableId" value="Default" />
       <updated>1575953926235</updated>
     </task>
+    <task id="LOCAL-00001" summary="Implemented the server with all methods and began client.">
+      <created>1575960559460</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575960559460</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented the server with all methods and began client." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the server with all methods and began client." />
   </component>
 </project>
