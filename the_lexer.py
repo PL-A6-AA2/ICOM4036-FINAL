@@ -1,24 +1,23 @@
 import ply.lex as lex
 
 # Reserved Words
-reserved = {
-    'create_socket': 'CREATE_SOCKET',
-    'create_socket2': 'CREATE_SOCKET2',
+reserved = {'create_client_socket': 'CREATE_CLIENT_SOCKET',
+    'create_server_socket': 'CREATE_SERVER_SOCKET',
     'connect': 'CONNECT',
     'receive': 'RECEIVE',
     'send': 'SEND',
-    'request': 'REQUEST',
-    'close': 'CLOSE',
+    'client_close': 'CLIENT_CLOSE',
     'bind': 'BIND',
     'listen': 'LISTEN',
     'accept': 'ACCEPT',
-    'close2': 'CLOSE2'
+    'server_close': 'SERVER_CLOSE',
+    'host': 'HOST',
+    'port': 'PORT',
+    'ip': 'IP'
 }
 
 # Tokens
-tokens = ["HOST",
-          "PORT",
-          "IP"] + list(reserved.values())
+tokens = [] + list(reserved.values())
 
 # Regular Expressions
 t_ignore = '\t'
