@@ -14,6 +14,7 @@ reserved = {'create_client_socket': 'CREATE_CLIENT_SOCKET',
     'host': 'HOST',
     'port': 'PORT',
     'ip': 'IP'
+    #'request: REQUEST'
 }
 
 # Tokens

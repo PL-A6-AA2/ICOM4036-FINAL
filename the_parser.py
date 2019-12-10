@@ -25,7 +25,9 @@ def p_statement(p):
             | host
             | port
             | ip
+
     """
+    # | request <--- esto va arriba como los demas
 
 
 def p_host(p):
@@ -98,6 +100,10 @@ def p_accept(p):
 def p_server_close(p):
     'server_close : SERVER_CLOSE'
     new_lang_server.close()
+
+#def p_request(p):
+  #      'request : REQUEST'
+   #     new_lang_request()
 
 
 yacc.yacc()
