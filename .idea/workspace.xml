@@ -4,6 +4,7 @@
     <list default="true" id="6e2ce520-429c-4db4-a3d9-2f87a645348a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_lexer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +31,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.the_lexer">
+  <component name="RunManager" selected="Python.the_parser">
     <configuration name="new_lang" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NewLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,8 +74,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="the_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NewLang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\amarq\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/the_parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.the_parser" />
         <item itemvalue="Python.the_lexer" />
         <item itemvalue="Python.new_lang" />
       </list>
@@ -91,6 +114,14 @@
       <option name="presentableId" value="Default" />
       <updated>1575961658811</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lexer completed">
+      <created>1575965375706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575965375706</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,5 +134,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lexer completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lexer completed" />
   </component>
 </project>
