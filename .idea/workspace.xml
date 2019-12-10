@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e2ce520-429c-4db4-a3d9-2f87a645348a" name="Default Changelist" comment="Parser fixed.">
+    <list default="true" id="6e2ce520-429c-4db4-a3d9-2f87a645348a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_lang_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_lang_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_lang_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_lexer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/the_parser.py" afterDir="false" />
     </list>
@@ -142,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576001738167</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Request comments.">
+      <created>1576002209358</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576002209358</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -170,6 +179,7 @@
     <MESSAGE value="Lexer completed" />
     <MESSAGE value="Parser started." />
     <MESSAGE value="Parser fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parser fixed." />
+    <MESSAGE value="Request comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Request comments." />
   </component>
 </project>

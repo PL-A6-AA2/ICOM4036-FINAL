@@ -11,9 +11,6 @@ reserved = {'create_client_socket': 'CREATE_CLIENT_SOCKET',
     'listen': 'LISTEN',
     'accept': 'ACCEPT',
     'server_close': 'SERVER_CLOSE',
-    'host': 'HOST',
-    'port': 'PORT',
-    'ip': 'IP'
     #'request: REQUEST'
 }
 
@@ -22,10 +19,6 @@ tokens = [] + list(reserved.values())
 
 # Regular Expressions
 t_ignore = '\t'
-t_HOST = r'(?!-)[a-zA-Z0-9]{1,63}(?<!-)$'
-t_PORT = r'[\d+]{5}'
-t_IP = r'[0-9]{3}' + r'.' + r'[0-9]{3}' + r'.' + r'[0-9]{3}' + r'.' + r'[0-9]{3}'
-
 
 # Define a rule so we can track line numbers
 def t_newline(t):
