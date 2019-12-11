@@ -11,7 +11,6 @@ reserved = {'create_client': 'CREATE_CLIENT',
     'listen': 'LISTEN',
     'accept': 'ACCEPT',
     'server_close': 'SERVER_CLOSE',
-
 }
 
 # Tokens
@@ -19,6 +18,7 @@ tokens = [] + list(reserved.values())
 
 # Regular Expressions
 t_ignore = '\t'
+
 
 # Define a rule so we can track line numbers
 def t_newline(t):

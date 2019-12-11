@@ -1,0 +1,49 @@
+Documentation
+========
+This program facilitates interaction between devices, it can be
+client-client or client-server. It contains a parser and lexer
+supplied by the PLY library, with the help of its own implementation
+to achieve the goal. The interactions are also facilitated with
+the socket import.
+
+How to use?
+- run the_parser.py file
+- run the commands
+
+Features:
+- Client creator
+- Server creator
+- Connection
+- Send request
+- Receive answer
+- Accept connection
+- Bind interfaces
+- Listen
+- Close client
+- Close server
+
+Commands:
+- create_client --> Create the client, no parameters needed.
+- create_server --> Create the server, no parameters needed.
+- connect --> Connect with the desired device, localhost and port parameters needed.
+- receive --> Receive the answer of the server, no parameter needed.
+- send --> Send the message or request to the server, no parameter needed.
+- client_close --> Close the connection with the client, no parameter needed.
+- bind --> Associate socket with a specific network, port parameter needed.
+- listen --> Enable a server the acceptation of a connection, parameter predetermined.
+- accept --> Accept the connection with a server, no parameter needed.
+- server_close --> Close the connection with the server, no parameter needed.
+
+Contributors:
+- Adean E. Colon Felix
+- Anthony J. Marquez Camacho
+
+Support:
+-python interpreter version > 3.6
+
+Helper Links:
+- https://realpython.com/python-sockets/#socket-api-overview
+- https://www.w3schools.in/python-tutorial/network-programming/
+- https://www.geeksforgeeks.org/socket-programming-python/
+- https://pythonprogramming.net/client-server-python-sockets/
+- https://www.dabeaz.com/ply/ply.html#ply_nn22
