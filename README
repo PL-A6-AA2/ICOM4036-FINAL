@@ -14,7 +14,7 @@ Features:
 - Client creator
 - Server creator
 - Connection
-- Send request
+- Send response
 - Receive answer
 - Accept connection
 - Bind interfaces
